@@ -7,11 +7,12 @@
     <meta name="description" content="">
     <meta name="title" content="">
     <meta name="keywrods" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 <body style="margin: 0%; padding: 0%;">
     <!-- Header / navbar -->
-    <header style="background-color: darkgray; margin: 0%;">
+    <header style="background-color: darkgray;">
         <div style="display: inline-block;">
             <h1 style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Portfolio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -34,21 +35,20 @@
         
         <div style="display: inline-block;">
             <p style="display: inline-block;">
-                Lorem ipsum dolor sit amet consectetur <br>
-                adipisicing elit. Debitis, minus eligendi,<br>
-                consequatur perferendis animi eum beatae <br>
-                voluptas voluptatum distinctio sint dolores <br>
-                inventore veritatis aut velit, cum provident. <br>
-                A dolorem maiores nemo, praesentium aut dicta <br>
-                accusantium quis rerum sapiente, omnis, vel <br>
-                repellat reprehenderit perferendis neque hic id.<br>
-                Nemo possimus sunt rerum?<br>
+                My name is Othmane Alaoui Moutarajji, and I am an entry-level <br>
+                web developer with a passion for creating functional <br>
+                and visually appealing websites. With my skills in HTML, CSS, JavaScript, <br>
+                and other web development tools, I am excited to help bring your website <br>
+                ideas to life. I am constantly learning and exploring new technologies to <br>
+                enhance my development abilities, and I look forward to growing alongside <br>
+                your project. Thank you for considering me for your web development needs, <br>
+                and please don't hesitate to contact me with any questions or project ideas!<br>
             </p>
             <img src="./images/images.jfif" style="display: inline-block;" alt="pizza">
         </div>
     </section>
     <!-- About section -->
-    <section id="about">
+    <section id="about" >
         <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -56,19 +56,44 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</h2>
+            <!-- use table tags with ordered list to structure the about section so its looks 
+                more readable -->
         <ol>
-            <li>name :Othmane</li>
-            <li>last name : Alaoui Moutarajji</li>
-            <li>academic background :
-                <ol>
-                    <li>University 1</li>
-                    <li>Unervsity 2</li>
-                    <li>University Exchange </li>
-                </ol>
-            </li>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <li><b>Name :</b></li>
+                        </td>
+                        <td>Othmane</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><b>Last Name :</b></li>
+                        </td>
+                        <td>Alaoui Moutarajji</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><b>Academic Background :</b></li>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><b>2019-2021 : </b>Mohemed V Univertsity technology degree</li>
+                                <li><b>2021-2022 : </b>Ibn tofail University Undergraduate degree</li>
+                                <li><b>2022-2023 : </b>Exchange program  </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </ol>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/APR7bp8gRBY" title="What Makes a Great Video Portfolio?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- video made to 100% to fill the whole page width -->
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/APR7bp8gRBY" 
+        title="What Makes a Great Video Portfolio?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen ></iframe>
     </section>
+    <!-- projects section including all the projects that make up the porfolio -->
     <section id="projects">
         <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -98,7 +123,8 @@
         </div>
         </div>
     </section>
-    <section id="contact" style="padding: 5%;">
+    <!-- contact section -->
+    <section id="contact">
         <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -106,13 +132,80 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</h2>
-        <form action="" metho="GET" style="padding: 10%;">
-            <label>Name :</label>
-            <input type="text" >
+    <!-- the form is combined with the table tags to make the project more readable -->
+        <form action="" method="GET" >
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label>Name :</label></td>
+                        <td><input type="text" placeholder="Type Your Name Here"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Address :</label></td>
+                        <td><input type="text" placeholder="Type Your Address Here"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label >Email :</label>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="Type Your E-mail Here">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Comment :</label>
+                        </td>
+                        <td>
+                            <textarea name="textarea" rows="4" placeholder="Feel Free to Add Your Comment Here" ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
     </section>
-    <section class="footer" style="background-color: darkgray; margin: 0%;">
-        ethe
+    <!-- footer section -->
+    <section class="footer" style="background-color: darkgray;">
+         <!-- table tags again used always for visibility reasons -->
+       <table width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <section class="contact">
+                        <div class="contact-info">
+                            <b>Othmane Moutarajji Alaoui</b><br>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Rabat, Morocco</span> <br>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:othmane.alaoui.moutarajji@gmail.com"><span>contactus@gmail.com</span></a><br>
+                            <a href="tel=+21265562256"><i class="fa-solid fa-phone"></i></a>
+                            <span>+21265562256</span>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </section>
+                </td>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105884.88504721936!2d-6.927303284042579!3d33.9693413826793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b871f50c5c1%3A0x7ac946ed7408076b!2sRabat!5e0!3m2!1sfr!2sma!4v1682360160558!5m2!1sfr!2sma" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+            </tr>
+            
+        </tbody>
+        
+       </table> 
+       <span >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all rights are reserved &copy Othmane Alaoui Moutarajji</span>
     </section>
 </body>
 </html>
